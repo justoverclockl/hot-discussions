@@ -1,6 +1,7 @@
 # Hot Discussions
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg) 
+
+![License](https://img.shields.io/badge/license-MIT-blue.svg) [![Latest Stable Version](https://poser.pugx.org/justoverclock/hot-discussions/v)](https://packagist.org/packages/justoverclock/hot-discussions) [![Total Downloads](https://poser.pugx.org/justoverclock/hot-discussions/downloads)](https://packagist.org/packages/justoverclock/hot-discussions)
 
 A [Flarum](http://flarum.org) extension. Hot Discussions widget for Flarum
 
