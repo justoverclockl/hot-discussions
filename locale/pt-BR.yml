@@ -1,0 +1,6 @@
+justoverclock-hot-discussions:
+  admin:
+    discLimit: Tópicos para mostrar (se vazio, o valor padrão é 10)
+    discLimit-help: aceita números, ex. "5" se você quer mostrar apenas 5 tópicos quentes
+  forum:
+    widget-title: Tópicos quentes
