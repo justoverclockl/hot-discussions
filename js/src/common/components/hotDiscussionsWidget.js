@@ -11,6 +11,7 @@
 import Widget from 'flarum/extensions/afrux-forum-widgets-core/common/components/Widget';
 import app from 'flarum/forum/app';
 import LoadingIndicator from 'flarum/common/components/LoadingIndicator';
+import Link from "flarum/common/components/Link";
 
 export default class hotDiscussionsWidget extends Widget {
     oninit(vnode) {
@@ -61,9 +62,9 @@ export default class hotDiscussionsWidget extends Widget {
                         return (
                             <li class="hotDiscWidget">
                                 <i class="fas fa-caret-right hotdiscIcon"></i>
-                                <a href={app.route.discussion(disc)} alt={disc.title()} class="hotDiscLink">
+                                <Link href={app.route.discussion(disc)} alt={disc.title()} className="hotDiscLink">
                                    {disc.title()}
-                                </a>
+                                </Link>
                             </li>
                         );
                     })}
