@@ -24,8 +24,6 @@ export default class hotDiscussionsWidget extends Widget {
         // get discussions object
         const hotDisc = app.store
             .find('discussions', {
-                isApproved: true,
-                exists: true,
                 sort: '-commentCount',
                 page: { limit: limitHotDisc },
             })
