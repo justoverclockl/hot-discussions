@@ -25,6 +25,7 @@ export default class hotDiscussionsWidget extends Widget {
         const hotDisc = app.store
             .find('discussions', {
                 sort: '-commentCount',
+                filter: { q: '-is:locked' }, // Exclude closed discussions
                 page: { limit: limitHotDisc },
             })
             .then((results) => {

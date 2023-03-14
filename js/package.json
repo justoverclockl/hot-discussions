@@ -14,10 +14,10 @@
   "devDependencies": {
     "prettier": "^2.3.0"
   },
-    "scripts": {
-        "dev": "webpack --mode development --watch",
-        "build": "webpack --mode production",
-        "format": "prettier --single-quote --trailing-comma es5 --print-width 150 --tab-width 4 --write src",
-        "format-check": "prettier --single-quote --trailing-comma es5 --print-width 150 --tab-width 4 --check src"
+  "scripts": {
+    "dev": "webpack --mode development --watch",
+    "build": "webpack --mode production",
+    "format": "prettier --single-quote --trailing-comma es5 --print-width 150 --tab-width 4 --write src",
+    "format-check": "prettier --single-quote --trailing-comma es5 --print-width 150 --tab-width 4 --check src"
   }
 }
