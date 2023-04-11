@@ -22,4 +22,9 @@ app.initializers.add('justoverclock/hot-discussions', () => {
         label: app.translator.trans('justoverclock-hot-discussions.admin.discLimit'),
         help: app.translator.trans('justoverclock-hot-discussions.admin.discLimit-help'),
       })
+      .registerSetting({
+        setting: 'justoverclock-hot-discussions.hideClosed',
+        type: 'boolean',
+        label: app.translator.trans('justoverclock-hot-discussions.admin.hideClosed'),
+      })
 });

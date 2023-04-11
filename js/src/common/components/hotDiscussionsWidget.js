@@ -21,10 +21,12 @@ export default class hotDiscussionsWidget extends Widget {
 
     oncreate(vnode) {
         const limitHotDisc = app.forum.attribute('justoverclock-hot-discussions.discLimit') || 10;
+        const filterDiscussions = app.forum.attribute('justoverclock-hot-discussions.hideClosed') === "1" ? '-is:locked' : '';
         // get discussions object
         const hotDisc = app.store
             .find('discussions', {
                 sort: '-commentCount',
+                filter: { q: filterDiscussions }, // Exclude closed discussions
                 page: { limit: limitHotDisc },
             })
             .then((results) => {

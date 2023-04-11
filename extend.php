@@ -24,4 +24,5 @@ return [
     new Extend\Locales(__DIR__.'/locale'),
     (new Extend\Settings)
         ->serializeToForum('justoverclock-hot-discussions.discLimit', 'justoverclock-hot-discussions.discLimit')
+        ->serializeToForum('justoverclock-hot-discussions.hideClosed', 'justoverclock-hot-discussions.hideClosed')
 ];
